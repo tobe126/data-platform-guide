@@ -15,4 +15,9 @@ pages:
   only:
     - master
   tags:
-    - shared' > .gitlab-ci.yml
+    - shared
+  timeout: 10 minutes
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
