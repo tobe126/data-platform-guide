@@ -1,8 +1,14 @@
 pages:
   stage: deploy
   script:
-    - mkdir public
-    - cp -r * public/
+    - mkdir -p public
+    - cp assets/ public/ -r
+    - cp module/ public/ -r
+    - cp _sidebar.md public/
+    - cp fullProcessDescription.html public/
+    - cp fullProcessDescription.md public/
+    - cp homePage.md public/
+    - cp index.html public/
   artifacts:
     paths:
       - public
