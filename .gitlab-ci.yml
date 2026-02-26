@@ -1,4 +1,4 @@
-image: alpine:latest
+image: gitlab/gitlab-runner:alpine
 
 pages:
   stage: deploy
@@ -16,5 +16,3 @@ pages:
       - public
   only:
     - master
-  tags:
-    - shared
