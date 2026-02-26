@@ -2,8 +2,8 @@ pages:
   stage: deploy
   script:
     - mkdir -p public
-    - cp assets/ public/ -r
-    - cp module/ public/ -r
+    - cp -r assets/* public/ || true
+    - cp -r module/* public/ || true
     - cp _sidebar.md public/
     - cp fullProcessDescription.html public/
     - cp fullProcessDescription.md public/
