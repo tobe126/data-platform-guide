@@ -16,8 +16,3 @@ pages:
     - master
   tags:
     - shared
-  timeout: 10 minutes
-  retry:
-    max: 2
-    when:
-      - runner_system_failure
